@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Kit Chan - Charles Schwab Coding Challenge</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="boxes.css">
+</head>
+
+<body>
+  <!--
+  Code Exam: 
+You can use javascript or jquery. 
+· Build a responsive module on a webpage containing 4 square boxes with colors: red, green, blue, white.
+· Each box has a maximum width of 230px, and the webpage has a maximum width of 980px.
+· Each box contains a button, and when clicked changes the color of the other boxes to its color, except for the white box.
+· The white box always remains white and when its button is clicked, it resets the colors of the other boxes to their original colors.
+
+  -->
+
+<div class="container-fluid">
+    <div class="jumbotron text-center">
+        <h3>Kit Chan</h3>
+        <h4>Chales Schwab Front End Developer Coding Exam</h4>
+    </div>
+  <!-- jumbotron -->
+
+    <div class="row text-center">
+      <div class="col-sm-3">
+        <div class = "redBox box" id="redBox">
+          <button id="redBoxButton">Change to Red</button>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="greenBox box" id="greenBox">
+          <button id="greenBoxButton">Change to Green</button>
+        </div>
+      </div>
+      
+      <div class="col-sm-3">
+        <div class="blueBox box" id="blueBox">
+          <button id="blueBoxButton">Change to Blue</button>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="whiteBox box" id="whiteBox">
+          <button id="whiteBoxButton">Reset to Original</button>
+        </div>
+      </div>
+        
+    <!-- row -->
+    </div>
+    <!-- container -->
+  </div>
+  
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="boxes.js"></script>
+</body>
+
+</html>

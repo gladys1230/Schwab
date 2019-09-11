@@ -1,0 +1,112 @@
+body {
+  max-width: 980px;
+  margin: auto;
+}
+
+.jumbotron {
+  opacity: 0.5;
+  color: black;
+}
+
+.container-fluid {
+  margin: auto;
+  border:1px solid black;
+  display: block;
+  padding: 20px;
+  background: white;
+  overflow:hidden;
+  
+}
+.box {
+  max-width: 230px;
+  display: block;
+  border: 1px solid black;
+  min-height: 120px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  
+  text-align: center;
+}
+.redBox{
+  background:red;
+}
+.redBox button {
+  color: black;
+  margin-top: 25px;
+  background: white;
+  border:1px solid white;;
+  border-radius:8px;
+  padding:10px;
+  cursor:pointer;
+  transition:.5s;
+}
+
+.redBox button:hover {
+  background:red;
+  color: white;
+  transition:.5s;
+}
+
+.greenBox {
+  background-color: green;
+}
+
+.greenBox button {
+  color: black;
+  margin-top: 25px;
+  background: white;
+  border:1px solid white;;
+  border-radius:8px;
+  padding:10px;
+  cursor:pointer;
+  transition:.5s;
+}
+
+.greenBox button:hover {
+  background: green;
+  color: white;
+  transition: .5s;
+}
+
+.blueBox {
+  background-color: blue;
+}
+
+.blueBox button {
+  color: black;
+  margin-top: 25px;
+  background: white;
+  border:1px solid white;;
+  border-radius:8px;
+  padding:10px;
+  cursor:pointer;
+  transition:.5s;
+}
+
+.blueBox button:hover {
+  background: blue;
+  color: white;
+  transition: .5s;
+}
+
+.whiteBox {
+  background-color: white;
+}
+
+.whiteBox button {
+  color: black;
+  margin-top: 25px;
+  background: white;
+  border:1px solid black;;
+  border-radius:8px;
+  padding:10px;
+  cursor:pointer;
+  transition:.5s;
+}
+
+.whiteBox button:hover {
+  background: black;
+  color: white;
+  transition: .5s;
+}
