@@ -1,35 +1,19 @@
 $(document).ready(function () {
 
-  /* press the red button change blue and green boxes to red */
-  $("#redBoxButton").click(() => {
-    $("#redBox").css("background", "red");
-    $("#blueBox").css("background", "red");
-    $("#greenBox").css("background", "red");
+  $('button').on('click', function(e) {
+    e.preventDefault();
 
-  });
+    // button clicked
+    var buttonClicked = $(this).attr('id');
 
-  /* press the green button change red and blue boxes to green */
-  $("#greenBoxButton").click(() => {
-    $("#redBox").css("background", "green");
-    $("#blueBox").css("background", "green");
-    $("#greenBox").css("background", "green");
-
-  });
-
-  /* press the blue button change red and green boxes to blue */
-  $("#blueBoxButton").click(() => {
-    $("#redBox").css("background", "blue");
-    $("#blueBox").css("background", "blue");
-    $("#greenBox").css("background", "blue");
-
-  });
-
-  /* press the white button reset to their original color */
-  $("#whiteBoxButton").click(() => {
-    $("#redBox").css("background", "red");
-    $("#blueBox").css("background", "blue");
-    $("#greenBox").css("background", "green");
-
+    // update color only when a red, green or blue button is clicked, otherwise reset to default
+    if(buttonClicked !== 'reset') {
+      // add inline style so it overrides the class
+      $(this).parents().find('.change').css('background-color', buttonClicked);
+    } else {
+      // remove all inline styles so class determines the color shown
+      $('section').removeAttr('style');
+    }
   });
 
 });
