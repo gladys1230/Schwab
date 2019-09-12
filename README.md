@@ -8,3 +8,6 @@ Charles Schwab's Coding Exercise
 · Each box contains a button, and when clicked changes the color of the other boxes to its color, except for the white box.
 
 · The white box always remains white and when its button is clicked, it resets the colors of the other boxes to their original colors.
+
+
+https://practical-booth-8e1896.netlify.com
