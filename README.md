@@ -10,4 +10,4 @@ Charles Schwab's Coding Exercise
 · The white box always remains white and when its button is clicked, it resets the colors of the other boxes to their original colors.
 
 
-https://practical-booth-8e1896.netlify.com
+https://compassionate-lichterman-63f1c8.netlify.com
