@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(197, 216, 216);
+  background-color: rgb(213, 236, 236);
 }
 
 header {
@@ -116,13 +116,15 @@ section {
 /* Test cases based on google Chrome's device settings */
 /* Different screen sizes */
 /*laptop size -- this is really optional */
-/* This is really depends on how the graphic design prefers the boxes to be layout.
-   with this changes it shows 2 X 2 else 3 on top and 1 on the second row */
-/*@media screen and (max-width: 1440px){
-  .container {
+/* This is really depends on how the graphic designer prefers the boxes to be layout. */
+ /*  with this changes it shows 2 X 2 else 3 on top and 1 on the second row  */
+ /*
+@media screen and (max-width: 1440px){
+  {
     max-width: 50%;
   }
-}*/
+}
+*/
 
 /* Pixel 2 */
 @media screen and (min-width: 731px){
@@ -139,13 +141,13 @@ section {
 }
 
 /* iPad horizontal */
-/* This is really depends on how the graphic design prefers the boxes to be layout.
+/* This is really depends on how the graphic designer prefers the boxes to be layout.
    with this changes it shows 2 X 2 else 3 on top and 1 on the second row */
-@media screen and (min-width: 1024px){
+/* @media screen and (min-width: 1024px){
   .container {
-    width: 70%;
+    width: 50%;
   }
-}
+} */
 
 /* iPhone 5/SE horizontal */ 
 @media screen and (min-width: 568px){
