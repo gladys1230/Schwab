@@ -1,24 +1,27 @@
 body {
+  background-color: rgb(197, 216, 216);
+}
+
+header {
+  background-color: rgb(201, 193, 193);
+  text-align: center;
+  height: auto;
+  font-size: 30px;
+  padding: 5px;
+}
+
+.container {
   max-width: 980px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   margin: auto;
+  justify-content: space-evenly;
+  align-items: stretch; 
 }
-
-.jumbotron {
-  opacity: 0.5;
-  color: black;
-}
-
-.container-fluid {
-  margin: auto;
-  border:1px solid black;
-  display: block;
-  padding: 20px;
-  background: white;
-  overflow:hidden;
-  
-}
-.box {
+section {
   max-width: 230px;
+  width: 100%;
   display: block;
   border: 1px solid black;
   min-height: 120px;
@@ -109,4 +112,43 @@ body {
   background: black;
   color: white;
   transition: .5s;
+}
+/* Test cases based on google Chrome's device settings */
+/* Different screen sizes */
+/* Pixel 2 */
+@media screen and (min-width: 731px){
+  .container {
+    width: 90%;
+  }
+}
+
+/* Pixel 2/XL */
+@media screen and (max-width: 823px){
+  .container {
+    width: 80%;
+  }
+}
+
+/* iPad horizontal */
+@media screen and (min-width: 1024px){
+  .container {
+    width: 70%;
+  }
+}
+
+/* iPhone 5/SE horizontal */ 
+@media screen and (min-width: 568px){
+  section {
+    width: 40%;
+    min-height: 110px;
+    padding-top: 5px;
+  }
+}
+
+/* iPhone 5/SE vertical */ 
+@media screen and (min-width: 320px){
+  section {
+    min-height: 100px;
+    padding-top: 2px;
+  }
 }
