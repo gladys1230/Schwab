@@ -36,11 +36,11 @@ section {
 }
 .redBox button {
   color: black;
-  margin-top: 25px;
+  margin-top: 15px;
   background: white;
   border:1px solid white;;
   border-radius:8px;
-  padding:10px;
+  padding:20px;
   cursor:pointer;
   transition:.5s;
 }
@@ -57,11 +57,11 @@ section {
 
 .greenBox button {
   color: black;
-  margin-top: 25px;
+  margin-top: 15px;
   background: white;
   border:1px solid white;;
   border-radius:8px;
-  padding:10px;
+  padding:20px;
   cursor:pointer;
   transition:.5s;
 }
@@ -78,11 +78,11 @@ section {
 
 .blueBox button {
   color: black;
-  margin-top: 25px;
+  margin-top: 15px;
   background: white;
   border:1px solid white;;
   border-radius:8px;
-  padding:10px;
+  padding:20px;
   cursor:pointer;
   transition:.5s;
 }
@@ -99,11 +99,11 @@ section {
 
 .whiteBox button {
   color: black;
-  margin-top: 25px;
+  margin-top: 15px;
   background: white;
   border:1px solid black;;
   border-radius:8px;
-  padding:10px;
+  padding:20px;
   cursor:pointer;
   transition:.5s;
 }
@@ -115,6 +115,15 @@ section {
 }
 /* Test cases based on google Chrome's device settings */
 /* Different screen sizes */
+/*laptop size -- this is really optional */
+/* This is really depends on how the graphic design prefers the boxes to be layout.
+   with this changes it shows 2 X 2 else 3 on top and 1 on the second row */
+/*@media screen and (max-width: 1440px){
+  .container {
+    max-width: 50%;
+  }
+}*/
+
 /* Pixel 2 */
 @media screen and (min-width: 731px){
   .container {
@@ -130,6 +139,8 @@ section {
 }
 
 /* iPad horizontal */
+/* This is really depends on how the graphic design prefers the boxes to be layout.
+   with this changes it shows 2 X 2 else 3 on top and 1 on the second row */
 @media screen and (min-width: 1024px){
   .container {
     width: 70%;
@@ -140,15 +151,28 @@ section {
 @media screen and (min-width: 568px){
   section {
     width: 40%;
-    min-height: 110px;
-    padding-top: 5px;
+    min-height: 90px;
   }
 }
 
 /* iPhone 5/SE vertical */ 
-@media screen and (min-width: 320px){
+@media screen and (max-width: 320px){
   section {
-    min-height: 100px;
-    padding-top: 2px;
+    min-height: 90px;
+    margin: 8px;
+  }
+}
+
+/* Galaxy Note 3 */ 
+@media screen and (max-width: 360px){
+  section {
+    min-height: 90px;
+  }
+}
+
+/* Pixel 2 vertical */ 
+@media screen and (max-width: 411px){
+  section {
+    min-height: 90px;
   }
 }
